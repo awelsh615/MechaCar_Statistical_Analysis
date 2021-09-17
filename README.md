@@ -39,7 +39,7 @@ However, by looking at the data grouped by individual lot number above, it can b
 
 
 ## T-Test Results on Suspension Coils
-![ttest]()
+![ttest](Images/t.test_all_lots.PNG)
 
 The first t-test was performed to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1500.  The p-value is 0.06028, therefore we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no** statistical difference in means.
 
