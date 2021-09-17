@@ -26,7 +26,15 @@ This linear model has an R<sup>2</sup>-value of 0.7149 which indicates that appr
 
 For our purposes, the **multiple regression model does predict mpg effectively**.
 
-## Suspension Coil Summary Statistics
+## Summary Statistics on Suspension Coils
+Weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.  The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
+
+![stats]()
+Looking at the summary statistics of all three lots above, the PSI variance is 62.29356 which is well within the specification limit of 100 PSI.
+
+![stats]()
+However, by looking at the data grouped by individual lot number above, it can be readily seen that the variance in lot #3 is over 170, which is well above the limit of 100 PSI.
+
 
 ## T-Test Results on Manufacturing Lots
 
