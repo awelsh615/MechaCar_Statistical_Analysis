@@ -6,7 +6,9 @@
 - Packages: dplyr, ggplot2, tidyverse
 
 ## Linear Regression to Predict MPG
-BEFORE I began this analysis, I chose a p-value of 0.05 as my tolerance level to test null and alternative hypotheses.  
+BEFORE I began this analysis, I chose a p-value of 0.05 as my tolerance level to test null and alternative hypotheses.  After running the multiple line regression, I got the following summary statistics:
+
+![stats](Images/Summary_statistics_lm.PNG)
 
 - *Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?*
 
