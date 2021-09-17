@@ -1,9 +1,9 @@
 # MechaCar Statistical Analysis
-
+![image](Images/autosrus.png)
 ## Resources
-- Data: MechaCar_mpg.csv, Suspension_Coil.csv
-- Software: Rstudio v1.4.1717, R-4.1.1
-- Packages: dplyr, ggplot2, tidyverse
+- **Data**: MechaCar_mpg.csv, Suspension_Coil.csv
+- **Software**: Rstudio v1.4.1717, R-4.1.1
+- **Packages**: dplyr, ggplot2, tidyverse
 
 ## Linear Regression to Predict MPG
 BEFORE I began this analysis, I chose a p-value of 0.05 as my tolerance level to test null and alternative hypotheses.  After running the multiple line regression, I got the following summary statistics:
