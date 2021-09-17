@@ -57,3 +57,25 @@ lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(mean_lot
 
 ```
 
+
+## Deliverable 3
+```{r}
+# perform a t-test to determine if the PSI across all manufacturing lots is statistically different from the pop mean
+t.test(Suspension$PSI, mu=1500)
+```
+
+```{r}
+# Perform a t-test to determine if lot #1 is statistically different from the pop mean.
+t.test(subset(Suspension, Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+```
+
+```{r}
+# Perform a t-test to determine if lot #2 is statistically different from the pop mean.
+t.test(subset(Suspension, Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+```
+
+```{r}
+# Perform a t-test to determine if lot #3 is statistically different from the pop mean.
+t.test(subset(Suspension, Manufacturing_Lot=="Lot3")$PSI, mu=1500)
+```
+
