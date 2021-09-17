@@ -38,6 +38,24 @@ Looking at the summary statistics of all three lots above, the PSI variance is 6
 However, by looking at the data grouped by individual lot number above, it can be readily seen that the variance in lot #3 is over 170, which is well above the limit of 100 PSI.
 
 
-## T-Test Results on Manufacturing Lots
+## T-Test Results on Suspension Coils
+![ttest]()
+
+The first t-test was performed to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1500.  The p-value is 0.06028, therefore we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no** statistical difference in means.
+
+### Lot 1 t-test
+![ttest]()
+
+Next we tested Lot #1 individually against the population mean and found that the p-value is 1, so again we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no statistical difference in means**.
+
+### Lot 2 t-test
+![ttest]()
+
+As shown above, the t-test on Lot #2 has a p-value of 0.6072, so once more we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no statistical difference in means**.
+
+### Lot 3 t-test
+![ttest]()
+
+As shown above, the t-test on Lot #3 has a p-value of 0.04168, so in this case we reject the null hypothesis, and conclude that the mean PSI for this dataset **is statistically different than the population mean**.
 
 ## Study Design: MechaCar vs. Competition
