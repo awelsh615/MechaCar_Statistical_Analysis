@@ -1,0 +1,31 @@
+---
+title: "Mecha_Car_Challenge"
+output: html_document
+---
+
+# Mecha Car Challenge
+## Deliverable 1
+
+```{r}
+suppressMessages(library(dplyr))
+```
+
+
+```{r}
+MechaCar <- read.csv('./Resources/MechaCar_mpg.csv') 
+head(MechaCar)
+```
+
+```{r}
+#generate multiple linear regression model
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar) 
+```
+
+
+```{r}
+# generate summary statistics
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar))
+```
+### P-Values below p=.05 threshold for Intercept, Vehicle Length, and Ground Clearance.
+
+### R-Squared Value: 0.7149
