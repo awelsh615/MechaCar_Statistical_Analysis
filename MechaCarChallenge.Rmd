@@ -8,10 +8,13 @@ output: html_document
 
 ```{r}
 suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
+suppressMessages(library(tidyverse))
 ```
 
 
 ```{r}
+# Read in csv file
 MechaCar <- read.csv('./Resources/MechaCar_mpg.csv') 
 head(MechaCar)
 ```
@@ -29,3 +32,28 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ### P-Values below p=.05 threshold for Intercept, Vehicle Length, and Ground Clearance.
 
 ### R-Squared Value: 0.7149
+
+
+## Deliverable 2
+```{r}
+# read in csv data file
+Suspension <- read.csv('./Resources/Suspension_Coil.csv') 
+head(Suspension)
+```
+```{r}
+# create summary statistics table
+total_summary <- Suspension %>% summarize(meanPSI = mean(Suspension$PSI),
+                                          medianPSI = median(Suspension$PSI),
+                                          variancePSI = var(Suspension$PSI),
+                                          SD_PSI = sd(Suspension$PSI))
+```
+
+```{r}
+# create summary statiscics by manufacturing lot
+lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(mean_lot = mean(PSI),
+                                          median_lot = median(PSI),
+                                          variance_lot = var(PSI),
+                                          SD_lot = sd(PSI), .groups="keep")
+
+```
+
