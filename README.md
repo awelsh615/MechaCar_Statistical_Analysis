@@ -44,17 +44,17 @@ However, by looking at the data grouped by individual lot number above, it can b
 The first t-test was performed to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1500.  The p-value is 0.06028, therefore we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no** statistical difference in means.
 
 ### Lot 1 t-test
-![ttest]()
+![ttest](Images/t.test_lot1.PNG)
 
 Next we tested Lot #1 individually against the population mean and found that the p-value is 1, so again we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no statistical difference in means**.
 
 ### Lot 2 t-test
-![ttest]()
+![ttest](Images/t.test_lot2.PNG)
 
 As shown above, the t-test on Lot #2 has a p-value of 0.6072, so once more we reject the alternative hypothesis in favor of the null hypothesis and conclude that there is **no statistical difference in means**.
 
 ### Lot 3 t-test
-![ttest]()
+![ttest](Images/t.test_lot3.PNG)
 
 As shown above, the t-test on Lot #3 has a p-value of 0.04168, so in this case we reject the null hypothesis, and conclude that the mean PSI for this dataset **is statistically different than the population mean**.
 
