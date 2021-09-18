@@ -59,3 +59,18 @@ As shown above, the t-test on Lot #2 has a p-value of 0.6072, so once more we re
 As shown above, the t-test on Lot #3 has a p-value of 0.04168, so in this case we reject the null hypothesis, and conclude that the mean PSI for this dataset **is statistically different than the population mean**.
 
 ## Study Design: MechaCar vs. Competition
+
+When comparing vehicles for purchase, most consumers are interested in several key metrics, including budget, fuel economy, features, safety ratings, size and type of vehicle, drivetrain, engine size, horsepower, towing capacity, and probably several other factors.  Let's assume the MechaCar is intended as a family vehicle.  I would choose: fuel efficiency and safety as the top two factors in determining a "top" vehicle choice.  
+
+To compare the performance of the MechaCar against its competitors, we would first need to gather data on the MechaCar and its competitors in the following categories:
+- Fuel efficiency (combined MPG)
+- Safety Rating (IIHS safety scores)
+
+I would use a two-sample t-test to determine if there is a statistical advantage in either of those metrics between the MechaCar and it's competitors.  
+
+H<sub>0</sub> = There is no statistical difference between the MechaCar and it's competitor in the given metric.
+
+H<sub>a</sub> = There is a statistical difference between the MechaCar and it's competitor, and one car has an advantage over the other.
+
+I would also choose the standard p = 0.05 as my tolerance level to accept or reject the null hypothesis.
+
